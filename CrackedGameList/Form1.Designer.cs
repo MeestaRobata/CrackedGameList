@@ -33,16 +33,18 @@
             this.crohasitColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iGGGamesColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.macGamesColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.croColorDialog = new System.Windows.Forms.ColorDialog();
+            this.iggColorDialog = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.GameData)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // GetUpdateButton
             // 
-            this.GetUpdateButton.Location = new System.Drawing.Point(12, 415);
+            this.GetUpdateButton.Location = new System.Drawing.Point(16, 511);
+            this.GetUpdateButton.Margin = new System.Windows.Forms.Padding(4);
             this.GetUpdateButton.Name = "GetUpdateButton";
-            this.GetUpdateButton.Size = new System.Drawing.Size(75, 23);
+            this.GetUpdateButton.Size = new System.Drawing.Size(100, 28);
             this.GetUpdateButton.TabIndex = 0;
             this.GetUpdateButton.Text = "Get Update";
             this.GetUpdateButton.UseVisualStyleBackColor = true;
@@ -59,10 +61,11 @@
             this.GameName,
             this.WebsiteName,
             this.DateUploaded});
-            this.GameData.Location = new System.Drawing.Point(25, 38);
+            this.GameData.Location = new System.Drawing.Point(33, 47);
+            this.GameData.Margin = new System.Windows.Forms.Padding(4);
             this.GameData.Name = "GameData";
             this.GameData.ReadOnly = true;
-            this.GameData.Size = new System.Drawing.Size(750, 350);
+            this.GameData.Size = new System.Drawing.Size(1000, 431);
             this.GameData.TabIndex = 2;
             // 
             // GameName
@@ -88,11 +91,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -103,42 +108,44 @@
             this.iGGGamesColorToolStripMenuItem,
             this.macGamesColorToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // crohasitColorToolStripMenuItem
             // 
             this.crohasitColorToolStripMenuItem.Name = "crohasitColorToolStripMenuItem";
-            this.crohasitColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crohasitColorToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.crohasitColorToolStripMenuItem.Text = "Crohasit Color";
             this.crohasitColorToolStripMenuItem.Click += new System.EventHandler(this.changeCroColor);
             // 
             // iGGGamesColorToolStripMenuItem
             // 
             this.iGGGamesColorToolStripMenuItem.Name = "iGGGamesColorToolStripMenuItem";
-            this.iGGGamesColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iGGGamesColorToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.iGGGamesColorToolStripMenuItem.Text = "IGG-Games Color";
+            this.iGGGamesColorToolStripMenuItem.Click += new System.EventHandler(this.changeIGGColor);
             // 
             // macGamesColorToolStripMenuItem
             // 
             this.macGamesColorToolStripMenuItem.Name = "macGamesColorToolStripMenuItem";
-            this.macGamesColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.macGamesColorToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.macGamesColorToolStripMenuItem.Text = "Mac-Games Color";
             // 
-            // colorDialog
+            // croColorDialog
             // 
-            this.colorDialog.AnyColor = true;
+            this.croColorDialog.AnyColor = true;
             // 
             // QueryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.GameData);
             this.Controls.Add(this.GetUpdateButton);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "QueryForm";
             this.Text = "Cracked Game Query";
@@ -162,7 +169,8 @@
         private System.Windows.Forms.ToolStripMenuItem crohasitColorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iGGGamesColorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem macGamesColorToolStripMenuItem;
-        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.ColorDialog croColorDialog;
+        private System.Windows.Forms.ColorDialog iggColorDialog;
     }
 }
 
